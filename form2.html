@@ -1,0 +1,57 @@
+<html>
+<head><h1>Galaxy Hotel</h1>
+<link rel="stylesheet" type="text/css"
+href="Header.css" title="Header">
+<script type= "text/javascript" src="script.js" ></script>
+<body onload='document.form2.name.focus()'>
+
+</head>
+
+<body class="bg">
+
+<div class="tabs">
+<a href="Header.html" class="tab" >Home</a>
+<a href="Rooms.html" class="tab">Rooms</a>
+<a href="Dining.html" class="tab">Dining</a>
+<a href="Amenities.html" class="tab">Amenities</a>
+<a href="form2.html" class="tab">Book Now</a>
+<a href="form1.php" class="tab">Login</a>
+</div>
+<br>
+<br>
+<div class="form2" >
+<form class ="inform2" action="insert.php" method="post">
+
+Name:<input type ="text" placeholder="Enter Name" name="name" required>
+Surname: <input type= "text" placeholder="Enter Surname" name="sname" required>
+<br> 
+<br>
+Mobile: <input type="text" placeholder="Enter Mobile No." name="mno" required><br><br>
+Email-id: <input type= "text" placeholder="Enter Email-Id" name="email" required><br><br>
+Address: <input type = "text" placeholder="Enter Address" name="address" required>
+<br><br>
+Check-in Date: <input type ="date" value ="   " name="checkin" required>
+<br><br>
+Check-out Date: <input type ="date" value ="   " name="checkout" required>
+<br><br>
+No. of Persons: <input type ="text" placeholder="Enter 2+ childrens"  name ="nop" required>
+<br><br>
+<label>Rooms:  </label> 
+ Studio<input type ="radio" name="room" value="s"> 
+1Bedroom <input type = "radio" name="room" value="1bdr">
+<br> <br>
+Rent: Studio Rs5000 per night <br>
+Rent: 1Bedroom Rs6000 per night <br><br>
+<a href="Rooms.html" style= "color: white;" >Click here to see rooms </a>
+
+<br>
+<br><br>
+<center><input type="submit" value="REGISTER" onclick="ValidateName(document.form2.name); ValidateName(document.form2.sname); ValidatePhone(document.form2.mno); ValidateEmail(document.form2.ed);" style="background-color: #191970;
+  font-family: Georgia;
+font-size: 30px; color:white; "></center>
+</form>
+</div>
+</body>
+</html>
+
+
